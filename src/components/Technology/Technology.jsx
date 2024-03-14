@@ -9,7 +9,7 @@ import style from "./Technology.module.css";
 
 const Technology = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="technology">
       <section>
         <span>
           <h2>We use cutting edge technology</h2>

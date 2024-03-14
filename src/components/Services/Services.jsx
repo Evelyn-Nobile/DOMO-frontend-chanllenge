@@ -3,7 +3,7 @@ import styles from "./Services.module.css";
 
 const Services = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="services">
       <h2>Our Services</h2>
       <p className={styles.paragraphInfo}>
         We feel very strong abour our skills when it comes to planning,

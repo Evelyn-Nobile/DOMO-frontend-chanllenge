@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { IconNav } from "../../SVG/IconNav";
 import style from "./Navbar.module.css";
 import { List, X } from "@phosphor-icons/react";
@@ -7,23 +6,23 @@ import { List, X } from "@phosphor-icons/react";
 const contentNav = [
   {
     name: "Home",
-    link: "/home",
+    link: "#home",
   },
   {
     name: "Services",
-    link: "/services",
+    link: "#services",
   },
   {
     name: "Technology",
-    link: "/technology",
+    link: "#technology",
   },
   {
     name: "Case studies",
-    link: "/caseStudies",
+    link: "#caseStudies",
   },
   {
     name: "About",
-    link: "/about",
+    link: "#about",
   },
 ];
 
@@ -41,12 +40,12 @@ const Navbar = () => {
       </span>
       <nav className={`${style.navLinks} close ${isOpen ? style.open : ""}`}>
         {contentNav.map(({ name, link }) => (
-          <Link key={name} to={link}>
+          <a key={name} href={link}>
             {name}
-          </Link>
+          </a>
         ))}
         <div className={style.hireUs}>
-          <IconNav /> <Link to="/hireUs">Hire us</Link>{" "}
+          <IconNav /> <a href="#hireUs">Hire us</a>{" "}
         </div>
       </nav>
       <div className={style.mobileMenuToggle} onClick={toggleMenu}>

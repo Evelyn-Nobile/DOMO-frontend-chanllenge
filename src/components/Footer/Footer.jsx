@@ -4,13 +4,12 @@ import {
   InstagramLogo,
   FacebookLogo,
 } from "@phosphor-icons/react/dist/ssr";
-import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 const info = [
   {
     personalName: "Evelyn Nobile",
-    phone: "https://wa.me/541154046884",
+    phone: "https://wa.me/+541154046884",
     email: "nobileevelyn1@gmail.com",
     linkedIn: "https://www.linkedin.com/in/evelyn-nobile/",
     github: "https://github.com/Evelyn-Nobile",
@@ -34,13 +33,13 @@ const Footer = () => {
             </figure>
 
             <figure>
-              <DribbbleLogo size={32} weight="fill" />
+              <DribbbleLogo size={32}  />
             </figure>
             <figure>
               <FacebookLogo size={32} weight="fill" />
             </figure>
             <figure>
-              <InstagramLogo size={32} weight="fill" />
+              <InstagramLogo size={32} />
             </figure>
           </div>
         </div>
@@ -48,17 +47,17 @@ const Footer = () => {
           <span>
             <p>Sitemap</p>
             <ul>
-              <li className={styles.disabled}>
-                <Link to="/home">Home</Link>
+              <li >
+                <a href="#home">Home</a>
               </li>
-              <li className={styles.disabled}>
-                <Link to="/technology">Technology</Link>
+              <li>
+                <a href="#technology">Technology</a>
               </li>
-              <li className={styles.disabled}>
-                <Link to="/services">Services</Link>
+              <li >
+                <a href="#services">Services</a>
               </li>
-              <li className={styles.disabled}>
-                <Link to="/about">About</Link>
+              <li >
+                <a href="#about">About</a>
               </li>
             </ul>
           </span>
@@ -80,12 +79,12 @@ const Footer = () => {
                 <a href={`mailto:${info[0].email}`}>Email</a>
               </li>
               <li>
-                <a href={info[0].phone} target="_blank">
+                <a href={info[0].phone} target="_blank" rel= "noopener noreferrer">
                   Whatsapp
                 </a>
               </li>
               <li>
-                <a href={info[0].linkedIn} target="_blank">
+                <a href={info[0].linkedIn} target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </a>
               </li>
