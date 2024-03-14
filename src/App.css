@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "CircularStd";
+  src: url("../src/assets/circular-std-medium-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap");
+}
+
+* {
+  font-family: "CircularStd", "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  background: #283345 !important;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+}
+
+.background-img {
+  top: 22rem;
+  right: 0;
+  height: auto;
+  width: 15rem;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .background-img {
+    display: block;
+    width: 30rem;
+    top: 15rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-img {
+    top: 0;
+    width: 45rem;
+  }
+}

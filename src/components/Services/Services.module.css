@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-top: 5rem !important;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & h2 {
+    color: white;
+    font-size: 2.45rem;
+  }
+
+  .paragraphInfo {
+    color: #8f959e;
+    padding-top: 1.2rem;
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: large;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 61rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 75rem;
+  }
+}

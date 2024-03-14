@@ -1,0 +1,8 @@
+:root {
+  --white: #ffffff;
+  --text-secondary: #9399a1;
+  --bg-blue: #3871ff;
+  --bg-gray: #283345;
+
+  color-scheme: dark;
+}

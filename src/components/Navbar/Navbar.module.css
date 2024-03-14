@@ -1,0 +1,125 @@
+* {
+  font-family: "CircularStd", "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navContainer {
+  width: 100% !important;
+  padding-top: 3.5rem !important;
+  padding-bottom: 5rem !important;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & span p {
+    color: white;
+    margin: 0;
+    text-wrap: nowrap;
+  }
+
+  & .navLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: white;
+
+    .hireUs {
+      display: flex;
+      gap: 0.5rem;
+      align-items: start;
+      color: white;
+
+      & a {
+        color: white;
+      }
+    }
+
+    & a {
+      color: #8f959e;
+      transition: 200ms ease-in-out;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* Estilos adicionales para el menú deslizante */
+  .navContainer {
+    position: relative;
+  }
+
+  .navLinks {
+    display: none !important;
+    font-size: x-large !important;
+
+    & svg {
+      display: none !important;
+    }
+  }
+
+  .open {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(40, 51, 69, 0.8);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  .hamburger {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .mobileMenuToggle {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 768px) {
+  .navContainer {
+    max-width: 61rem;
+    padding: 0 2rem;
+  }
+
+  .mobileMenuToggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navContainer {
+    max-width: 75rem;
+    padding: 0 1rem;
+  }
+}

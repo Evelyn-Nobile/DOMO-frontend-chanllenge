@@ -1,0 +1,84 @@
+* {
+  font-family: "CircularStd", "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+  top: -4rem;
+  z-index: 1;
+
+  & section {
+    position: relative;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+
+    & h2 {
+      color: #868686;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    & span {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5rem;
+
+      & figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        width: 4rem;
+        color: #acacac;
+
+        & svg {
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container section {
+    max-width: 61rem;
+
+    & span figure {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container section {
+    max-width: 75rem;
+    padding-top: 5rem !important;
+
+    & span figure {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+}

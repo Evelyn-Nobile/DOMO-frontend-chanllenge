@@ -1,0 +1,121 @@
+* {
+  font-family: "CircularStd", "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    & h2 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      width: 100%;
+      max-width: 35rem;
+    }
+
+    & p {
+      color: #8f959e;
+      font-size: 1rem;
+      font-weight: 100;
+      width: 100%;
+      max-width: 37rem;
+      text-wrap: pretty;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .buttons {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    .learn {
+      padding: 0.5rem 1.5rem;
+      color: #8f959e;
+      background: transparent;
+      border: 1.75px solid rgba(143, 149, 158, 0.5);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        background: rgba(143, 149, 158, 0.5);
+        color: white;
+      }
+    }
+
+    .projects {
+      padding: 0.5rem 1.5rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1.75px solid var(--bg-blue);
+      border-radius: 4px;
+      gap: 0.5rem;
+      background-color: var(--bg-blue);
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        background: rgba(56, 113, 255, 0.5);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 61rem;
+    padding: 5rem 1rem;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      & h2 {
+        color: white;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3.5rem;
+        width: 100%;
+        max-width: 35rem;
+      }
+
+      & p {
+        color: #8f959e;
+        font-size: large;
+        font-weight: 100;
+        width: 100%;
+        max-width: 37rem;
+        text-wrap: pretty;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 75rem;
+    padding: 10rem 1rem;
+  }
+}

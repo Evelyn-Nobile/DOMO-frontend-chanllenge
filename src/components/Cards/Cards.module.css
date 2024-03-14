@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  top: -15rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 2;
+
+  .card {
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--bg-blue);
+    overflow: hidden;
+    border-radius: 5px;
+
+    & span {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 20rem;
+      color: white;
+
+      & h3 {
+        font-family: sans-serif !important;
+        font-size: 1.75rem;
+        font-weight: 400;
+      }
+
+      & p {
+        font-family: sans-serif !important;
+        font-size: medium;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        line-height: 1.5rem;
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+
+    & button {
+      font-family: sans-serif !important;
+      margin-top: 2rem;
+      padding: 0.75rem 1.75rem;
+      background-color: transparent;
+      border-radius: 2px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      color: white;
+      font-size: 1rem;
+      font-weight: 100;
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    & figure {
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & img {
+        position: absolute;
+        margin-top: 7rem;
+        object-fit: contain;
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 61rem;
+    flex-direction: row;
+
+    .card {
+      & figure img {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 75rem;
+    .card {
+      & figure img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+}

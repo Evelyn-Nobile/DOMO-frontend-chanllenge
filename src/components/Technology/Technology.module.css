@@ -1,0 +1,118 @@
+* {
+  font-family: "CircularStd", "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-blue);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  top: -4rem;
+  z-index: 1;
+
+  & section {
+    position: relative;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+
+    & span {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+      max-width: 40rem;
+
+      & h2 {
+        font-family: sans-serif !important;
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        width: 100%;
+      }
+
+      & p {
+        font-family: sans-serif !important;
+        font-size: 1rem;
+        max-width: 36rem;
+        letter-spacing: 0.5px;
+        color: #9bb8ff;
+        line-height: 2rem;
+      }
+    }
+
+    .technologies {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      & figure {
+        width: 4.5rem;
+        height: 4.5rem;
+        display: flex;
+        color: white;
+
+        & svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container section {
+    max-width: 61rem;
+    padding-top: 3.5rem !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5rem;
+
+    & span {
+      & h2 {
+        font-size: 2.4rem;
+      }
+
+      & p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .technologies {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container section {
+    padding-top: 5rem !important;
+    max-width: 75rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 10rem;
+
+    & span {
+      & h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .technologies {
+      grid-template-columns: repeat(2, 1fr);
+      padding-right: 2rem;
+    }
+  }
+}
