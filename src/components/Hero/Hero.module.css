@@ -8,24 +8,15 @@
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  padding: 1rem 1rem;
+  padding: 5rem 1rem;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+ 
 
   .header {
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
 
-    & h2 {
-      color: white;
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: 2.5rem;
-      width: 100%;
+    & h2 {   
+      line-height: 2.5rem;      
       max-width: 35rem;
     }
 
@@ -41,13 +32,13 @@
   }
 
   .buttons {
-    padding: 2rem 0;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
 
     .learn {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 1rem;
       color: #8f959e;
       background: transparent;
       border: 1.75px solid rgba(143, 149, 158, 0.5);

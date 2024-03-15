@@ -7,31 +7,23 @@
 }
 
 .container {
-  position: relative;
   top: -15rem;
-  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
   gap: 1.5rem;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 
   .card {
-    display: flex;
-    padding: 2rem;
-    width: 100%;
     background-color: var(--bg-blue);
-    overflow: hidden;
     border-radius: 5px;
+    
+
 
     & span {
-      display: flex;
-      flex-direction: column;
       gap: 1.5rem;
-      width: 100%;
       max-width: 20rem;
-      color: white;
 
       & h3 {
         font-family: sans-serif !important;
@@ -68,15 +60,10 @@
     }
 
     & figure {
-      position: relative;
       width: 10rem;
       height: 10rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
       & img {
-        position: absolute;
         margin-top: 7rem;
         object-fit: contain;
         width: 12rem;

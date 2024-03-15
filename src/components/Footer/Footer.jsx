@@ -18,35 +18,36 @@ const info = [
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
-      <footer>
-        <div className={styles.info}>
+    <div className={`${styles.container} ${"position-relative w-100 "}`}>
+      <footer className={`${styles.footerContainer} ${"d-flex justify-content-between "}`}>
+        <div className={`${styles.info} ${"d-flex flex-column w-100"}`}>
           <p className={styles.title}>compleet labs</p>
           <p className={styles.description}>
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
             nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper
             nulla.
           </p>
-          <div className={styles.socials}>
-            <figure>
+          <div className={`${styles.socials} ${"d-flex align-items-center"}`}>
+            <figure className={styles.socialIcon}>
               <TwitterLogo size={32} weight="fill" />
             </figure>
 
-            <figure>
+            <figure className={styles.socialIcon} >
               <DribbbleLogo size={32}  />
             </figure>
-            <figure>
+            <figure className={styles.socialIcon} >
               <FacebookLogo size={32} weight="fill" />
             </figure>
-            <figure>
+            <figure className={styles.socialIcon}>
               <InstagramLogo size={32} />
             </figure>
           </div>
         </div>
-        <div className={styles.links}>
-          <span>
+
+        <div className={"d-flex justify-content-between w-100"}>
+          <span className="d-flex flex-column align-items-center justify-content-center">
             <p>Sitemap</p>
-            <ul>
+            <ul className="d-flex flex-column">
               <li >
                 <a href="#home">Home</a>
               </li>
@@ -62,9 +63,9 @@ const Footer = () => {
             </ul>
           </span>
 
-          <span className="disabled">
-            <p>Case studies</p>
-            <ul>
+          <span className="d-flex flex-column align-items-center justify-content-center ">
+            <p className={styles.case}>Case studies</p>
+            <ul className="d-flex flex-column " >
               <li className={styles.disabled}>Swiss Airlines</li>
               <li className={styles.disabled}>Google</li>
               <li className={styles.disabled}>Apple</li>
@@ -72,9 +73,9 @@ const Footer = () => {
             </ul>
           </span>
 
-          <span>
+          <span className="d-flex flex-column align-items-center justify-content-center " >
             <p>Contact me</p>
-            <ul>
+            <ul className="d-flex flex-column">
               <li>
                 <a href={`mailto:${info[0].email}`}>Email</a>
               </li>

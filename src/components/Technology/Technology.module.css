@@ -7,8 +7,6 @@
   list-style: none;
 }
 .container {
-  position: relative;
-  width: 100%;
   background-color: var(--bg-blue);
   padding-top: 10rem;
   padding-bottom: 8rem;

@@ -34,9 +34,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className={style.navContainer}>
+    <div className={` ${"w-100 pt-5 pb-5 px-3 mx-auto d-flex justify-content-between align-items-center"} ${style.container}`}>
       <span>
-        <p>compleet labs</p>
+        <p className={`${style.logo} ${"text-white m-0"}`}>compleet labs</p>
       </span>
       <nav className={`${style.navLinks} close ${isOpen ? style.open : ""}`}>
         {contentNav.map(({ name, link }) => (
@@ -44,12 +44,12 @@ const Navbar = () => {
             {name}
           </a>
         ))}
-        <div className={style.hireUs}>
+        <div className={` ${"d-flex align-items-center"}  ${style.hireUs}`}>
           <IconNav /> <a href="#hireUs">Hire us</a>{" "}
         </div>
       </nav>
       <div className={style.mobileMenuToggle} onClick={toggleMenu}>
-        <div className={`${style.hamburger} `}>
+        <div className={`${style.hamburger} ${isOpen ? style.iconIcon : ""}`}>
           {isOpen ? <X size={32} /> : <List size={32} />}
         </div>
       </div>

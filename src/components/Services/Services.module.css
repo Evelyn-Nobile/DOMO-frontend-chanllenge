@@ -7,17 +7,12 @@
 }
 
 .container {
-  position: relative;
-  width: 100%;
   padding-top: 5rem !important;
   padding: 0 1rem;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+}
 
-  & h2 {
-    color: white;
+ .title {
     font-size: 2.45rem;
   }
 
@@ -31,7 +26,7 @@
     font-size: large;
     line-height: 1.5rem;
   }
-}
+
 
 @media (min-width: 768px) {
   .container {

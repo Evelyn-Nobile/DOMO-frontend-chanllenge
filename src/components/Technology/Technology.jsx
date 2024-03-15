@@ -9,7 +9,7 @@ import style from "./Technology.module.css";
 
 const Technology = () => {
   return (
-    <div className={style.container} id="technology">
+    <div className={`${style.container} ${"position-relative w-100" }`} id="technology">
       <section>
         <span>
           <h2>We use cutting edge technology</h2>
@@ -22,7 +22,7 @@ const Technology = () => {
             faucibus dolor auctor.
           </p>
         </span>
-        <div className={style.technologies}>
+        <div className={style.technologies} >
           <figure>
             <Html />
           </figure>

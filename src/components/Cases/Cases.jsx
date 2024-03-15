@@ -15,11 +15,11 @@ AOS.init({
 
 const Cases = () => {
   return (
-    <div className={styles.container}>
-      <section>
+    <div className={` ${styles.container} ${"position-relative w-100 bg-white"}`}>
+      <section className="position-relative w-100 d-flex flex-column align-items-center">
         <h2>Clients we worked with</h2>
 
-        <span>
+        <span className="w-100 d-flex justify-content-between align-items-center mt-5">
           <figure
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"

@@ -1,24 +1,26 @@
 import "./App.css";
+
+
 import {
   Navbar,
-  Hero,
+   Hero,
   Technology,
-  Services,
-  Cases,
+   Services,
+   Cases,
   Cards,
-  Footer,
+   Footer,
 } from "./components/index.js";
 
 function App() {
   return (
     <div className="container-main">
-      <Navbar />
+      <Navbar />     
       <Hero />
       <Services />
       <Technology />
       <Cases />
       <Cards />
-      <Footer />
+      <Footer /> 
       <img src="/img/background-img.jpg" alt="" className="background-img" />
     </div>
   );
