@@ -19,7 +19,7 @@
 
   <img src="https://res.cloudinary.com/empleosagil/image/upload/v1711299111/qn7pdmpcd5yp5qne2t9d.png" style="display: block; margin: auto;" />
 
-  <h2>Tecnolgías que se utilizaron:</h2>
+  <h2>Tecnologías que se utilizaron:</h2>
        <ul>
    <li>React + vite</li>
     <li>Bootstrap</li>
